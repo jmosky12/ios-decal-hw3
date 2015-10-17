@@ -10,9 +10,20 @@ import UIKit
 
 class HangmanViewController: UIViewController {
 
+    @IBOutlet weak var newGameButton: UIButton!
+    @IBOutlet weak var hangmanStateIV: UIImageView!
+    @IBOutlet weak var lettersGuessedLabel: UILabel!
+    @IBOutlet weak var guessesLabel: UILabel!
+    @IBOutlet weak var nextGuessLabel: UILabel!
+    @IBOutlet weak var nextGuessTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let beach: UIImage = UIImage(named: "beach")!
+        view.backgroundColor = UIColor(patternImage: beach)
+
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
